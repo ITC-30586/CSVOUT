@@ -1,0 +1,5 @@
+パスワードをバッチに書きたくない場合
+
+pgpass.conf
+
+localhost:5432:testdb:postgres:password
