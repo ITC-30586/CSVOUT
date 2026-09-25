@@ -1,6 +1,6 @@
 '
 '   CSV_OUT     PostgreSQLのViewデータをCSV出力する
-'   2026/09/25 コメント修正２
+'   2026/09/25 
 Imports System
 Imports System.Diagnostics
 Imports System.IO
@@ -15,7 +15,6 @@ Module Program
     Private DBNM As String = String.Empty           'DB データベース名       :dbtokyu
     Private DBID As String = String.Empty           'DB ユーザーID           :tokyu
     Private DBPW As String = String.Empty           'DB パスワード           :trace
-    'pgAdmini less
     'Private APPATH As String = String.Empty         'postgresアプリケーションパス:C:\Program Files\PostgreSQL\15\bin
     Private OutForder As String = String.Empty      '出力先フォルダ
 
