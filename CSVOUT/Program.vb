@@ -1,6 +1,6 @@
 '
 '   CSV_OUT     PostgreSQLのViewデータをCSV出力する
-'   2026/09/25 コメント修正
+'   2026/09/25 コメント修正２
 Imports System
 Imports System.Diagnostics
 Imports System.IO
