@@ -1,0 +1,9 @@
+diff a/CSVOUT/Program.vb b/CSVOUT/Program.vb	(rejected hunks)
+@@ -15,7 +15,6 @@
+     Private DBNM As String = String.Empty           'DB �f�[�^�x�[�X��       :dbtokyu
+     Private DBID As String = String.Empty           'DB ���[�U�[ID           :tokyu
+     Private DBPW As String = String.Empty           'DB �p�X���[�h           :trace
+-    'pgAdmini less
+     'Private APPATH As String = String.Empty         'postgres�A�v���P�[�V�����p�X:C:\Program Files\PostgreSQL\15\bin
+     Private OutForder As String = String.Empty      '�o�͐�t�H���_
+ 

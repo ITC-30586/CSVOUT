@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>CSVOUT</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <ApplicationIcon>beach_sea_mollusk_crab_hermit_icon_209463.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Copyright>TICO</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="beach_sea_mollusk_crab_hermit_icon_209463.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.13.2" />
+    <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.23.0" />
+  </ItemGroup>
+
+</Project>

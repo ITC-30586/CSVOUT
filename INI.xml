@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property>
+  <db_ip>10.152.208.33</db_ip>
+  <db_port>25432</db_port>
+  <db_name>dbtokyu</db_name>
+  <db_id>tokyu</db_id>
+  <db_pw>trace</db_pw>
+  <app_path>C:\Program Files\PostgreSQL\17\bin</app_path>
+  <output_path>D:\work\tokyu\CSV_OUT</output_path>
+</property>
