@@ -123,7 +123,7 @@ Module Program
 
         Dim FileName As String
         Dim WS As IO.StreamWriter
-        Dim TD As String = Format(Now, "yyyyMMdd")
+        Dim TD As String = Date.Now.AddDays(-1).ToString("yyyyMMdd")
         '起動パス取得
         Dim MyPath As String = AppContext.BaseDirectory
 
@@ -153,11 +153,12 @@ Module Program
             WS.WriteLine("If exist ""%OUT_FILE%"" del ""%OUT_FILE%""")
 
             WS.WriteLine("REM ViewデータをCSV出力")
-            Dim targetDate As String = Date.Today.AddDays(-1).ToString("yyMMdd")
+            Dim targetDate As String = Date.Today.AddDays(-1).ToString("yyyy/MM/dd")
+            'Dim TD As String = Date.Now.AddDays(-1).ToString("yyyy/MM/dd")
 
             Dim sql As String =
                 "\copy (SELECT * FROM public.view_shotdata " &
-                "WHERE h03 = '" & targetDate & "') " &
+                "WHERE kdate = '" & targetDate & "') " &
                 "TO '%OUT_FILE%' WITH (FORMAT csv, HEADER true, ENCODING 'SJIS')"
 
             WS.WriteLine($"""{MyPath}\psql.exe"" -v ON_ERROR_STOP=1 -c ""{sql}""")
