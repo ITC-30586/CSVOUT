@@ -645,12 +645,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_CBA2AD27BFB14792AA04DE00DC7FB790"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_CC85927BDCFA21BA208F273EF732B7B8"
         "OwnerKey" = "8:_5E82BD6E1254246C40DE3299396503F7"
         "MsmSig" = "8:_UNDEFINED"
@@ -896,6 +890,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -920,6 +922,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -1101,11 +1111,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.AI.WindowsServer, Version=2.23.0.29, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_0FD3C493112F742ECE2C539A82F9103A"
-                    {
-                    "Name" = "8:Microsoft.AI.WindowsServer.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.AI.WindowsServer.dll"
             "TargetName" = "8:"
@@ -1194,11 +1199,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.DependencyInjection.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_20396AA26AC1936FBF9D2C858955F3DD"
-                    {
-                    "Name" = "8:Microsoft.Extensions.DependencyInjection.Abstractions.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.DependencyInjection.Abstractions.dll"
             "TargetName" = "8:"
@@ -1245,11 +1245,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.Configuration.Binder, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_216314BCD513074C01AC6C4CFFB68AF9"
-                    {
-                    "Name" = "8:Microsoft.Extensions.Configuration.Binder.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.Configuration.Binder.dll"
             "TargetName" = "8:"
@@ -1358,11 +1353,6 @@
             "AssemblyAsmDisplayName" = "8:System.Security.Permissions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_333CEF4A6E1147C4992BB8D17F2036C7"
-                    {
-                    "Name" = "8:System.Security.Permissions.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\CSVOUT\\bin\\Release\\net8.0\\publish\\System.Security.Permissions.dll"
             "TargetName" = "8:"
@@ -1389,11 +1379,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.Logging.ApplicationInsights, Version=2.23.0.29, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_3983A2A85C5A3A034FF05480048438D2"
-                    {
-                    "Name" = "8:Microsoft.Extensions.Logging.ApplicationInsights.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.Logging.ApplicationInsights.dll"
             "TargetName" = "8:"
@@ -1420,11 +1405,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.Configuration, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4244874F44369C3F32DD344D0B0E37BB"
-                    {
-                    "Name" = "8:Microsoft.Extensions.Configuration.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.Configuration.dll"
             "TargetName" = "8:"
@@ -1451,11 +1431,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.AI.EventCounterCollector, Version=2.23.0.29, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5315483ADB1447F7B37D706F569B80B3"
-                    {
-                    "Name" = "8:Microsoft.AI.EventCounterCollector.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.AI.EventCounterCollector.dll"
             "TargetName" = "8:"
@@ -1513,11 +1488,6 @@
             "AssemblyAsmDisplayName" = "8:System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_578404D43C1746F59BD9EBE1DCB0848F"
-                    {
-                    "Name" = "8:System.Configuration.ConfigurationManager.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\CSVOUT\\bin\\Release\\net8.0\\publish\\System.Configuration.ConfigurationManager.dll"
             "TargetName" = "8:"
@@ -1544,11 +1514,6 @@
             "AssemblyAsmDisplayName" = "8:System.Security.Cryptography.ProtectedData, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5A10F3FEB0637EBB25694CE5D218ADFB"
-                    {
-                    "Name" = "8:System.Security.Cryptography.ProtectedData.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:System.Security.Cryptography.ProtectedData.dll"
             "TargetName" = "8:"
@@ -1606,11 +1571,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.Logging, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5EB34E25885D85F581D10C7DCB71D75C"
-                    {
-                    "Name" = "8:Microsoft.Extensions.Logging.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.Logging.dll"
             "TargetName" = "8:"
@@ -1637,11 +1597,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.AI.DependencyCollector, Version=2.23.0.29, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5F0F9416E141B61A16FE705C537A89C4"
-                    {
-                    "Name" = "8:Microsoft.AI.DependencyCollector.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.AI.DependencyCollector.dll"
             "TargetName" = "8:"
@@ -1668,11 +1623,6 @@
             "AssemblyAsmDisplayName" = "8:System.Windows.Extensions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_60D113963FBABBA45F671DD52C0F25C7"
-                    {
-                    "Name" = "8:System.Windows.Extensions.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:System.Windows.Extensions.dll"
             "TargetName" = "8:"
@@ -1770,11 +1720,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.AI.PerfCounterCollector, Version=2.23.0.29, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_6BC720439CA47CAC1B07EDFDA43903ED"
-                    {
-                    "Name" = "8:Microsoft.AI.PerfCounterCollector.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.AI.PerfCounterCollector.dll"
             "TargetName" = "8:"
@@ -1883,11 +1828,6 @@
             "AssemblyAsmDisplayName" = "8:System.Drawing.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7484846CE03CDD14C17DAD4800661AA0"
-                    {
-                    "Name" = "8:System.Drawing.Common.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:System.Drawing.Common.dll"
             "TargetName" = "8:"
@@ -1945,11 +1885,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.Configuration.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7E316914D561418A137DE4E64F64935F"
-                    {
-                    "Name" = "8:Microsoft.Extensions.Configuration.Abstractions.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.Configuration.Abstractions.dll"
             "TargetName" = "8:"
@@ -1976,11 +1911,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.Caching.Memory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7FC844DC49A2457768F1B9063D3221D9"
-                    {
-                    "Name" = "8:Microsoft.Extensions.Caching.Memory.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.Caching.Memory.dll"
             "TargetName" = "8:"
@@ -2109,11 +2039,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.ApplicationInsights.WorkerService, Version=2.23.0.29, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_8D408EFA4CDA4B2E8A976FCD6730BC2C"
-                    {
-                    "Name" = "8:Microsoft.ApplicationInsights.WorkerService.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\CSVOUT\\bin\\Release\\net8.0\\publish\\Microsoft.ApplicationInsights.WorkerService.dll"
             "TargetName" = "8:"
@@ -2140,11 +2065,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.Logging.Abstractions, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_92D38FDF1CC4664D3A93216782B7EF9F"
-                    {
-                    "Name" = "8:Microsoft.Extensions.Logging.Abstractions.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.Logging.Abstractions.dll"
             "TargetName" = "8:"
@@ -2202,11 +2122,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.AI.ServerTelemetryChannel, Version=2.23.0.29, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_9A4E4E527ECF2C8EAFC6BF5B1A5ACBB3"
-                    {
-                    "Name" = "8:Microsoft.AI.ServerTelemetryChannel.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.AI.ServerTelemetryChannel.dll"
             "TargetName" = "8:"
@@ -2264,11 +2179,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_9E76B2934638479E82D0BD854D0CB6EB"
-                    {
-                    "Name" = "8:Microsoft.Bcl.AsyncInterfaces.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\CSVOUT\\bin\\Release\\net8.0\\publish\\Microsoft.Bcl.AsyncInterfaces.dll"
             "TargetName" = "8:"
@@ -2295,11 +2205,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.Primitives, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_A004EC8118C142397431CC100F73D02E"
-                    {
-                    "Name" = "8:Microsoft.Extensions.Primitives.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.Primitives.dll"
             "TargetName" = "8:"
@@ -2408,11 +2313,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.ApplicationInsights, Version=2.23.0.29, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_B40194820F5E439BB2A310903E6B2C30"
-                    {
-                    "Name" = "8:Microsoft.ApplicationInsights.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\CSVOUT\\bin\\Release\\net8.0\\publish\\Microsoft.ApplicationInsights.dll"
             "TargetName" = "8:"
@@ -2521,11 +2421,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.Options, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_BA7056531DA9C9F8526DFFBADDBDEABB"
-                    {
-                    "Name" = "8:Microsoft.Extensions.Options.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.Options.dll"
             "TargetName" = "8:"
@@ -2665,11 +2560,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.ApplicationInsights, Version=2.23.0.29, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C4B1FFB9FAA7F6F44A38327B3AF8A260"
-                    {
-                    "Name" = "8:Microsoft.ApplicationInsights.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.ApplicationInsights.dll"
             "TargetName" = "8:"
@@ -2696,11 +2586,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.Caching.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_C94ACF08DD76578D7E24284B31D8E12F"
-                    {
-                    "Name" = "8:Microsoft.Extensions.Caching.Abstractions.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Microsoft.Extensions.Caching.Abstractions.dll"
             "TargetName" = "8:"
@@ -2744,26 +2629,6 @@
             {
             "SourcePath" = "8:..\\CSVOUT\\bin\\Release\\net8.0\\publish\\libintl-9.dll"
             "TargetName" = "8:libintl-9.dll"
-            "Tag" = "8:"
-            "Folder" = "8:_158AC31A218A43FD84490895E5C4596E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CBA2AD27BFB14792AA04DE00DC7FB790"
-            {
-            "SourcePath" = "8:..\\CSVOUT\\bin\\Release\\net8.0\\publish\\INI.xml"
-            "TargetName" = "8:INI.xml"
             "Tag" = "8:"
             "Folder" = "8:_158AC31A218A43FD84490895E5C4596E"
             "Condition" = "8:"
@@ -2940,11 +2805,6 @@
             "AssemblyAsmDisplayName" = "8:Microsoft.Extensions.DependencyInjection, Version=2.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_DF789C948C464106B7755AA62BB0BBC9"
-                    {
-                    "Name" = "8:Microsoft.Extensions.DependencyInjection.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:..\\CSVOUT\\bin\\Release\\net8.0\\publish\\Microsoft.Extensions.DependencyInjection.dll"
             "TargetName" = "8:"
@@ -2991,11 +2851,6 @@
             "AssemblyAsmDisplayName" = "8:System.Diagnostics.PerformanceCounter, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_E2543EC89F994B999D6735EFEC65EE4F"
-                    {
-                    "Name" = "8:System.Diagnostics.PerformanceCounter.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:System.Diagnostics.PerformanceCounter.dll"
             "TargetName" = "8:"
