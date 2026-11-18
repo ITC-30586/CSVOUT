@@ -1,3 +1,7 @@
+'
+'       Ver1.0.0.0  2024/06/19
+'       Ver1.1.0    2026/11/18 view_shotdata2対応
+'
 Imports System
 Imports System.Diagnostics
 Imports System.IO
@@ -22,12 +26,14 @@ Module Program
         Dim MyPath As String = AppContext.BaseDirectory
 
         Dim batPath As String = MyPath & "\export_view.bat"
+        Dim batPath2 As String = MyPath & "\export_view2.bat"
         Dim psi As New ProcessStartInfo()
 
         'INI.XMLから設定取得
         Call Init_xml()
         'batファイル作成
         Call Make_batFile()
+        Call Make_batFile2()
 
         Try
             'batファイルのパスを指定してコマンドプロンプトで実行
@@ -169,6 +175,16 @@ Module Program
             WS.WriteLine("  Exit /b 1")
             WS.WriteLine(")")
             WS.WriteLine("echo Export success: %OUT_FILE%")
+            'WS.WriteLine("Exit /b 0")
+
+            ' 1本目のexport成功判定の直後に追加
+            WS.WriteLine("REM export_view2.bat を実行")
+            WS.WriteLine("Call """ & MyPath & "\export_view2.bat""")
+            WS.WriteLine("If errorlevel 1 (")
+            WS.WriteLine("  echo Export2 failed.")
+            WS.WriteLine("  Exit /b 1")
+            WS.WriteLine(")")
+            WS.WriteLine("echo Export success: %OUT_FILE%")
             WS.WriteLine("Exit /b 0")
 
             WS.Close()
@@ -202,6 +218,63 @@ Module Program
 
     End Sub
 
+    'batファイル作成
+    Private Sub Make_batFile2()
+
+        Dim FileName As String
+        Dim WS As IO.StreamWriter
+        Dim TD As String = Date.Now.AddDays(-1).ToString("yyyyMMdd")
+        '起動パス取得
+        Dim MyPath As String = AppContext.BaseDirectory
+
+        Try
+
+            FileName = AppContext.BaseDirectory & "\export_view2.bat"
+            '既に存在する場合は削除
+            If IO.File.Exists(FileName) Then
+                IO.File.Delete(FileName)
+            End If
+
+
+            WS = IO.File.AppendText(FileName)
+
+            WS.WriteLine("@echo off")
+            WS.WriteLine("setlocal")
+            WS.WriteLine("REM PostgreSQL接続情報")
+            WS.WriteLine("Set ""PGHOST=" & DBIP & """")
+            WS.WriteLine("Set ""PGPORT=" & DBPO & """")
+            WS.WriteLine("Set ""PGDATABASE=" & DBNM & """")
+            WS.WriteLine("Set ""PGUSER=" & DBID & """")
+            WS.WriteLine("Set ""PGPASSWORD=" & DBPW & """")
+            WS.WriteLine("REM 出力先")
+            '日別ファイル
+            WS.WriteLine("Set ""OUT_FILE=" & OutForder & "\" & TD & "_view_data2.csv""")
+            '既にファイルが存在する場合は削除
+            WS.WriteLine("If exist ""%OUT_FILE%"" del ""%OUT_FILE%""")
+
+            WS.WriteLine("REM ViewデータをCSV出力")
+            Dim targetDate As String = Date.Today.AddDays(-1).ToString("yyyy/MM/dd")
+
+            Dim sql As String =
+                "\copy (SELECT * FROM public.view_shotdata2 " &
+                "WHERE kdate = '" & targetDate & "') " &
+                "TO '%OUT_FILE%' WITH (FORMAT csv, HEADER true, ENCODING 'SJIS')"
+
+            WS.WriteLine($"""{MyPath}\psql.exe"" -v ON_ERROR_STOP=1 -c ""{sql}""")
+            WS.WriteLine("If errorlevel 1 (")
+            WS.WriteLine("  echo Export failed.")
+            WS.WriteLine("  Exit /b 1")
+            WS.WriteLine(")")
+            WS.WriteLine("echo Export success: %OUT_FILE%")
+            WS.WriteLine("Exit /b 0")
+
+            WS.Close()
+
+        Catch ex As Exception
+            Call ErrLOG("Make_batFile", ex.Message)
+        End Try
+
+    End Sub
 
 
 
